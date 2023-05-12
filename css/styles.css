@@ -131,6 +131,18 @@ body {
   color: var(--secondary-text-color);
 }
 
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /*================= COMPONENTS =================*/
 
 /*====================HEDER====================*/
@@ -143,6 +155,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+}
+.header-logo-link {
   margin-right: 76px;
 }
 
@@ -230,9 +244,7 @@ body {
 /*==================== HERO ====================*/
 
 /*==================== ADVANTAGE ====================*/
-.advantage-title {
-  visibility: hidden;
-}
+
 .advantage-list {
   display: flex;
   gap: 24px;
@@ -344,9 +356,7 @@ body {
 .examples-list-item {
   width: calc((100% - 48px) / 3);
 }
-.examples-title {
-  visibility: hidden;
-}
+
 .examples-subtitle {
   margin-bottom: 8px;
 }

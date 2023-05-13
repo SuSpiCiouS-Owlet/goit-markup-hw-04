@@ -288,11 +288,9 @@ body {
 .team {
   background-color: var(--light-background-color);
 }
-.team-container {
-  padding: 32px 0;
-}
+
 .team-card-container {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-list-subtitle {
@@ -332,7 +330,7 @@ body {
 }
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--green-color);
+  background-color: var(--next-accent-color);
 }
 .social-list-icon {
   fill: #f4f4fd;

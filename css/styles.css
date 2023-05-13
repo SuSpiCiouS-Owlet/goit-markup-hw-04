@@ -8,6 +8,7 @@
   --dark-background-color: #2e2f42;
   --light-background-color: #f4f4fd;
   --white-background: #ffffff;
+  --green-color: #31d0aa;
   --card-set-gap: 24px;
   --button-focus: 1px solid #e7e9fc;
 }
@@ -103,7 +104,9 @@ body {
 .sorting-btn:focus {
   color: var(--white-background);
   background-color: var(--next-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid transparent;
+
 }
 
 .title {
@@ -133,16 +136,17 @@ body {
 
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 /*================= COMPONENTS =================*/
 
 /*====================HEDER====================*/
@@ -164,7 +168,8 @@ body {
   color: var(--primary-text-color);
 }
 
-.nav-list-link {
+.nav-list-link,
+.social-media-subtitle {
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -224,6 +229,12 @@ body {
 
 .hero {
   background-color: var(--dark-background-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/\(group-people-working-website-template.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
 }
 
@@ -244,7 +255,16 @@ body {
 /*==================== HERO ====================*/
 
 /*==================== ADVANTAGE ====================*/
-
+.advantage-icon-container {
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-background-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .advantage-list {
   display: flex;
   gap: 24px;
@@ -286,6 +306,9 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
+.team-position {
+  margin-bottom: 8px;
+}
 .team-list {
   display: flex;
   gap: 24px;
@@ -301,7 +324,55 @@ body {
   text-align: center;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--green-color);
+}
+
 /*==================== /TEAM ====================*/
+
+/*==================== CUSTOMERS ====================*/
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.customers-list-link { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  fill: #8e8f99; 
+  padding: 16px 32px;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--next-accent-color);
+  fill: var(--next-accent-color);
+}
+
+/*==================== /CUSTOMERS ====================*/
+
 /*==================== /MAIN ====================*/
 
 /*=================== FOOTER ======================*/
@@ -328,6 +399,37 @@ body {
   color: var(--light-background-color);
 }
 
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+.social-media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.social-media-link:hover,
+.social-media-link:focus  {
+  background-color: var(--green-color);
+}
+.social-media-subtitle {
+  color: var(--white-background);
+  padding-top: 0px;
+}
+.footer-container {
+  display: flex;
+}
+.footer-left-side {
+  margin-right: 120px;
+}
+.footer-right-side {
+  display: block;
+}
 /*=================== /FOOTER ======================*/
 
 /*==================== PORTFOLIO ====================*/
@@ -347,6 +449,11 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+.examples-list-link:hover .examples-container,
+.examples-list-link:focus .examples-container{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .examples-container {
   padding: 32px 16px;

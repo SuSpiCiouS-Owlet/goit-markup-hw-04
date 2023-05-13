@@ -220,7 +220,7 @@ body {
 
 .hero {
   background-color: var(--dark-background-color);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/\(group-people-working-website-template.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/group-people-working-website-template.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -420,7 +420,7 @@ body {
 }
 .social-media-subtitle {
   color: var(--white-background);
-  padding-top: 0px;
+  padding: 0;
 }
 .footer-container {
   display: flex;
